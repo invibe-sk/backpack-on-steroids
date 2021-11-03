@@ -1,0 +1,34 @@
+{
+  "name": "invibe-sk/backpack-on-steroids",
+  "description": "Adds another functionality to laravel backpack",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Adam Ondrejkovič",
+      "email": "adam.ondrejkovic@invibe.sk"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Invibe\\BackpackOnSteroids\\": "src"
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Invibe\\BackpackOnSteroids\\Providers\\BackpackOnSteroidsServiceProviders"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "alexusmai/laravel-file-manager": "^2.5",
+    "spatie/laravel-medialibrary": "^9.0.0",
+    "backpack/crud": "4.1.*",
+    "ext-json": "*"
+  }
+}
